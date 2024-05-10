@@ -1,0 +1,462 @@
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color1: blue;
+    --primary-color: #ffae00;
+    --primary-color3: #3CB371;
+    --primary-color4: #1C1C1C;
+    --primary-color5: #FFD700;
+    --primary-color6: #1C1C1C;
+    --primary-color7: blue;
+}
+
+#navbar {
+    position: fixed;
+    margin-top: -100px;
+    background-color: var(--primary-color1);
+    height: 57px;
+}
+
+.lista {
+    display: flex;
+    font-size: 13pt;
+    line-height: 20px;
+    padding: 0rem 40rem;
+    gap: 226px;
+    list-style: none;
+    text-shadow: 2px 2px black;
+    color: #f0f0f0;
+    z-index: 1;
+}
+
+#img1 {
+    position: fixed;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: -80px;
+    opacity: 10;
+    padding: 0rem 6rem;
+}
+
+.cabeçalho {
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    margin-left: 660px;
+    height: 420px;
+    width: 760px;
+}
+
+.faculdade {
+    position: fixed;
+    text-shadow: 2px 2px black;
+    font-size: 17pt;
+    background-color: var(--primary-color3);
+    width: 324px;
+    height: 350px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-left: -510px;
+    margin-top: -105px;
+    z-index: -1;
+}
+
+.exercicio {
+    margin-top: 90px;
+    position: fixed;
+    font-size: 15pt;
+    margin-left: -440px;
+    height: 110px;
+    width: 290px;
+    background-color: var(--primary-color4);
+    border-radius: 10px;
+    line-height: 28px;
+    opacity: 90%;
+}
+
+.cabeçalho2 {
+    background-color: var(--primary-color5);
+    border-radius: 10px;
+    height: 413px;
+    margin-top: 350px;
+    margin-left: 1px;
+    width: 760px;
+}
+
+.notasavaliações {
+    padding-top: 56px;
+    color: black;
+    text-shadow: none;
+    font-size: 16pt;
+}
+
+.primeiranota {
+    margin-top: -139px;
+    display: flex;
+    text-shadow: none;
+    color: black;
+    font-size: 11pt;
+    text-align: left;
+    padding-left: 47px;
+}
+
+.segundanota {
+    display: flex;
+    margin-top: -126px;
+    color: black;
+    text-shadow: none;
+    font-size: 11pt;
+    text-align: left;
+    padding-left: 47px;
+}
+
+.sistema {
+    margin-top: 364px;
+    margin-left: 1px;
+    text-shadow: 2px 2px black;
+    background-color: var(--primary-color6);
+    border-radius: 10px;
+    padding-left: 70px;
+    height: 413px;
+    width: 690px;
+    line-height: 38px;
+    text-shadow: 2px 2px black;
+    font-size: 14pt;
+    text-align: left;
+}
+
+.sistema2 {
+    margin-top: -346px;
+    line-height: 180px;
+    text-align: center;
+    padding-right: 80px;
+    font-size: 32px;
+}
+
+.sistema3 {
+    margin-top: -85px;
+    display: inline-block;
+    background-color: #1E90FF;
+    width: 763px;
+    height: 413px;
+    border-radius: 10px;
+    margin-left: 660px;
+}
+
+#informação {
+    margin-top: 60px;
+    text-align: center;
+    align-items: center;
+    padding-left: 9px;
+    color: white;
+    text-decoration: none;
+    font-size: 17pt;
+    text-shadow: 2px 2px black;
+}
+
+#anodenascimento {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 21px;
+    padding-left: 57px;
+}
+
+.inputnumber {
+    width: 66px;
+    margin-left: 289px;
+    margin-top: 19px;
+    border-radius: 6px;
+    height: 20px;
+    border-color: white;
+}
+
+#sexo {
+    margin-top: 24px;
+    padding-left: 56px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 11pt;
+}
+
+#masculino {
+    text-shadow: 2px 2px black;
+    padding-left: 142px;
+    margin-top: -40px;
+    color: white;
+    font-size: 11pt;
+}
+
+.inputm {
+    position: absolute;
+    display: flex;
+    margin-left: 123px;
+    margin-top: -40px;
+}
+
+.inputfem {
+    margin-left: -516px;
+}
+
+.butaoverificação {
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 54px;
+    background-color: #646464;
+    border-color: #646464;
+    color: white;
+    border-radius: 5px;
+    line-height: 1.6;
+    align-items: center;
+    width: 100px;
+    height: 27px;
+    opacity: 80%;
+}
+
+#feminino {
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-left: 270px;
+    margin-top: -40px;
+    font-size: 11pt;
+}
+
+.formulariomatricula {
+    margin-top: -270px;
+    padding: 0px 800px;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 2px 2px black;
+    line-height: 10px;
+    font-size: 13pt;
+}
+
+#aluno {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -28px;
+    padding-left: 1px;
+    margin-left: -90px;
+}
+
+#materia {
+    flex-direction: column;
+    margin-left: -90px;
+}
+
+#butao {
+    width: 100px;
+    height: 27px;
+    margin-top: 40px;
+    margin-left: 196px;
+    background-color: #646464;
+    border-color: #646464;
+    border-radius: 5px;
+    color: white;
+    opacity: 75%;
+    text-align: center;
+}
+
+#input3 {
+    width: 330px;
+    border-radius: 5px;
+    margin-left: -92px;
+}
+
+.turno {
+    margin-left: -90px;
+}
+
+.select1 {
+    width: 337px;
+    border-radius: 5px;
+    margin-left: -92px;
+}
+
+.select2 {
+    width: 337px;
+    border-radius: 5px;
+    margin-left: -92px;
+}
+
+#endereço {
+    padding-left: 264px;
+    margin-top: -182px;
+}
+
+#input6 {
+    width: 330px;
+    border-radius: 5px;
+    margin-left: 260px;
+    margin-top: 0px;
+}
+
+#cep {
+    padding-left: 264px;
+}
+
+#email {
+    padding-left: 266px;
+}
+
+#input7,
+#input8 {
+    width: 330px;
+    border-radius: 5px;
+    margin-left: 260px;
+}
+
+.funcaoscript {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 1000px;
+    padding-left: 1500px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 14pt;
+}
+
+#resultado1,
+#resultado2,
+#resultado3 {
+    display: flex;
+    margin-top: 7px;
+    text-align: right;
+    line-height: 1.0;
+}
+
+#resultado4,
+#resultado5,
+#resultado6 {
+    display: flex;
+    margin-top: 7px;
+    text-align: right;
+    line-height: 1.0;
+}
+
+#resultado7,
+#resultado8,
+#resultado9 {
+    display: flex;
+    padding-left: 390px;
+    text-align: right;
+    color: black;
+    text-shadow: none;
+    line-height: 1.4;
+}
+
+#resultado10 {
+    display: flex;
+    color: green;
+    text-shadow: none;
+    text-align: right;
+    padding-left: 389px;
+    text-shadow: none;
+}
+
+.faculdade2 {
+    margin-top: 130px;
+    width: 250px;
+    line-height: 5.2;
+    padding-left: 908px;
+    font-family: italic;
+}
+
+.programa {
+    margin-top: -30px;
+    padding-left: 194px;
+    text-align: center;
+}
+
+.rodape {
+    margin-top: 165px;
+    line-height: 0.4;
+    font-family: italic;
+    padding-left: 189px;
+}
+
+.lista2 {
+    margin-top: -225px;
+    list-style: none;
+    font-size: 11pt;
+    line-height: 2.5;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-left: 164px;
+}
+
+.butaodecalculo {
+    flex-direction: column;
+    margin-top: 140px;
+    margin-left: 10px;
+    opacity: 75%;
+    border-radius: 5px;
+    line-height: 1.6;
+    border-color: #646464;
+    background-color: #646464;
+    color: white;
+    width: 100px;
+    height: 27px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#input1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 49px;
+    border-radius: 6px;
+    width: 40px;
+    height: 23px;
+}
+
+#input2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px;
+    border-radius: 6px;
+    width: 40px;
+    height: 23px;
+    margin-left: 49px;
+}
+
+#data-hora {
+    display: block;
+    position: fixed;
+    margin-top: -2080px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 13pt;
+    list-style: none;
+    padding-left: 1680px;
+}
+
+.footer {
+    margin-top: -89px;
+    height: 352px;
+    font-size: 12pt;
+    background-color: var(--primary-color7);
+    color: white;
+    text-align: center;
+}
+
+#matricula {
+    text-align: center;
+}

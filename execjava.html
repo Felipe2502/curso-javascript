@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Java</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul class="lista">
+            <li><a href="#matricula">Matrícula</a></li>
+            <li><a href="#aluno">Aluno</a></li>
+            <li><a href="#sistema">Sistema</a></li>
+        </ul>
+    </nav>
+
+    <img src="img01.jpg" alt="img1" id="img1">
+
+    <header class="cabeçalho">
+        <div>
+            <h2 id="matricula"><a id="matricula"><br><br>Formulário de Matrícula</a></h2>
+        </div>
+
+        <div class="faculdade">
+            <h3><br><br>FACULDADE <br><br>ESTÁGIO</h3>
+        </div>
+
+        <div>
+            <h1 class="exercicio"><br>EXERCÍCIO DE <br>JAVASCRIPT</h1>
+        </div>
+        <div class="cabeçalho2">
+            <h2 class="notasavaliações">Sistema de Notas das Avaliações</h2>
+            <div id="resultado7"></div>
+            <div id="resultado8"></div>
+            <div id="resultado9"></div>
+            <div id="resultado10"></div>
+            <form>
+                <input type="number" id="input1" min="0" max="10">
+                <input type="number" id="input2" min="0" max="10">
+            </form>
+
+            <script>
+                function enviar() {
+                    var num1 = Number(document.getElementById("input1").value);
+                    var num2 = Number(document.getElementById("input2").value);
+                    var media = (num1 + num2) / 2;
+
+                    resultado7.innerHTML = (`Nota da primeira avaliação: ${num1}`)
+                    resultado8.innerHTML = (`Nota da segunda avaliação: ${num2}`)
+                    resultado9.innerHTML = (`Média Geral: ${media}`)
+                    resultado10.innerHTML = (`Status: ${media <= 6} APROVADO`);
+
+
+                    if (media >= 6)
+                        if (media == 6)
+                            alert("Uau! aprovado com distintivo!");
+                        else
+                            alert("Parabéns, aprovado!");
+
+                    if (media <= 6)
+                        if (media == 6)
+                            alert("Abaixo de 6, reprovado");
+                }
+            </script>
+
+
+            <h4 class="primeiranota">Nota da primeira avaliação:</h4>
+            <div>
+                <button type="button" class="butaodecalculo" onclick="enviar()">CALCULAR</button>
+            </div>
+            <h4 class="segundanota">Nota da segunda avaliação:</h4>
+        </div>
+
+        <div class="sistema">
+            <h1 class="sistema2"><a>Sistema</a></h1>
+            <div id="resultado1"></div>
+            <div id="resultado2"></div>
+            <div id="resultado3"></div>
+            <div id="resultado4"></div>
+            <div id="resultado5"></div>
+            <div id="resultado6"></div>
+        </div>
+    </header>
+
+    <header>
+        <div class="formulariomatricula">
+            <p id="aluno">Nome do Aluno:</p>
+            <form>
+                <input id="input3" type="text">
+            </form>
+            <p class="turno">Turno Pretendido:</p>
+            <select class="select1" id="select01">
+                <option>Escolha seu turno:</option>
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+            </select>
+            <p id="materia">Curso Pretendido:</p>
+            <select class="select2" id="select02">
+                <option>Curso Pretendido:</option>
+                <option>Análise e Desenvolvimento</option>
+                <option>Redes de computadores</option>
+                <option>Gestão de TI</option>
+            </select>
+            <p id="endereço">Endereço:</p>
+            <input id="input6" type="text">
+            <p id="cep" type="number">CEP:</p>
+            <input id="input7" type="number">
+            <p id="email">E-mail:</p>
+            <input id="input8" type="text">
+            <input id="butao" type="button" value="ENVIAR" onclick="envio()">
+        </div>
+
+    </header>
+
+    <div class="funcaoscript">
+        <script>
+            function envio() {
+                var aluno1 = document.getElementById("input3").value;
+                var select1 = document.getElementById("select01").value;
+                var select2 = document.getElementById("select02").value;
+                var endereço1 = document.getElementById("input6").value;
+                var cep1 = document.getElementById("input7").value;
+                var email1 = document.getElementById("input8").value;
+                var resultado = document.getElementById("resultado")
+
+                resultado1.innerHTML = (`Nome do Aluno: ${aluno1}`)
+                resultado2.innerHTML = (`Turno Pretendido: ${select1}`)
+                resultado3.innerHTML = (`Matéria: ${select2}`)
+                resultado4.innerHTML = (`Endereço: ${endereço1}`)
+                resultado5.innerHTML = (`CEP: ${cep1}`)
+                resultado6.innerHTML = (`E-mail: ${email1}`)
+            }
+        </script>
+    </div>
+
+    <header class="sistema3">
+        <div>
+            <h1 id="informação">Informações para assinatura do contrato</h1>
+            <span id="anodenascimento">Ano de Nascimento do aluno:</span>
+            <input type="number" id="inputnumerico" class="inputnumber">
+            <h5 id="sexo">Sexo:</h5>
+            <h5 id="masculino">Masculino</h5>
+            <input type="radio" class="inputm" id="inputmasculino">
+            <h5 id="feminino">Feminino</h5>
+        </div>
+    </header>
+
+    <script>
+        function funcaoB() {
+            var anodousuario = document.getElementById("inputnumerico").value;
+            var idade = document.getElementById("inputnumerico").value;
+            resultado15.innerHTML = (`O aluno nasceu no ano de: ${anodousuario}`);
+
+            const dataAtual = new Date();
+
+            var anoAtual = dataAtual.getFullYear();
+
+            anodousuario = anoAtual - anodousuario;
+
+            if (anodousuario >= 18) {
+                alert("Qual é a forma de pagamento?");
+            } else if (anodousuario < 18 && anodousuario > 0) {
+                alert("Quem é o representante financeiro?")
+            } else {
+                alert("Ano inválido, digite outro número!")
+            }
+        }
+
+    </script>
+
+    <formn>
+        <input type="radio" class="inputfem">
+        <input type="button" value="VERIFICAR" class="butaoverificação" id="butaoverificar" onclick="funcaoB()">
+        <div id="resultado13"></div>
+        <div id="resultado15"></div>
+    </formn>
+
+    <div id="resultado10"></div>
+    <div id="resultado11"></div>
+    <div id="resultado12"></div>
+
+    <div id="resultado14"></div>
+
+    <footer class="footer">
+        <div>
+            <h3 class="faculdade2">FACULDADE ESTÁGIO</h3>
+            <p class="programa">Estágio de programação em JavaScript realizado na EMSURB, no turno da tarde. Simulação
+                de
+                Sistema Acadêmico</p>
+        </div>
+
+        <div class="rodape">
+            <p>EMPRESA MUNICIPAL DE SERVIÇOS URBANOS - EMSURB</p>
+            <p>EMSURB - AV. Santos Santana SN - Parque Augusto Franco (Sementeira)-Jardins.</p>
+            <p>CNPJ: 32.805.400/0001-60</p>
+        </div>
+    </footer>
+
+    <ul class="lista2">
+        <li>Contato: 793021-9979</li>
+        <li>E-mail: faculdadeestagio@estagio.com</li>
+        <li>instagram</li>
+    </ul>
+
+    <div id="data-hora"></div>
+    <script>
+        const zeroFill = n => {
+            return ('0' + n).slice(-2);
+        }
+        const interval = setInterval(() => {
+            const now = new Date();
+            const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+            document.getElementById('data-hora').innerHTML = dataHora;
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
